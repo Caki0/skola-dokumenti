@@ -1,0 +1,336 @@
+body {
+	background-color: #acacac;
+	font-family: 'Times New Roman', Times, serif;
+	min-height: 98vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    color: #ffff;
+    background-color: #24471A;
+	box-shadow: #22351d 0px 0px 10px;
+    padding-right: 10px;
+    margin: 0 69EM 0 0;
+    padding-left: 20px;
+	border-radius: 10px;
+}
+
+.main-header {
+    text-align: center;
+    background-color: #24471A;
+    color: #fff;
+    padding: 20px;
+	margin: -8px -8px 0 -8px;
+}
+
+.main-nav {
+	background-color: #bbbbbb;
+	position: relative;
+	text-align: center;
+	width: 26%;
+	left: 37%;
+	box-shadow: #525252 0px 0px 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.main-nav ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+}
+
+
+.main-nav li:hover>a {
+	text-decoration: underline;
+	color: #24471A;
+	font-weight: bold;
+}
+
+
+.main-nav a {
+	text-decoration: none;
+	color: #000;
+	padding: 10px 20px;
+	display: inline-block;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+.main-footer {
+	background-color: #325c26;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	margin-top: auto;
+}
+
+.columns{
+    columns: 2;
+    width: 600px;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.menu{
+	box-shadow: 0px 0px 8px 0px #000000;
+	width: 100%;
+	padding: 0;
+	position: relative;
+	float: left;
+	background: #325C26;
+	list-style: none;
+}
+
+.menu li {
+	display: inline;
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	line-height: 20px;
+	position: relative;
+	border-right:1px #4cbd50 solid;
+} 
+
+.menu li a {
+	padding: 15px 20px 15px;
+	color: #FFF;
+	text-decoration: none;
+	display: inline-block;
+	-o-transition: color .3s linear, background .3s linear;
+	-webkit-transition: color .3s linear, background .3s linear;
+	-moz-transition: color .3s linear, background .3s linear;
+	transition: color .3s linear, background .3s linear;	
+}
+
+.menu li:hover > a{
+	color: #fff;
+	background: #447A40;
+}
+
+.menu li.active > a{
+	background:rgb(229,228,226);
+  color:#325C26;
+}
+
+.menu > li > a {
+	text-transform: uppercase;
+}
+
+/* DROPDOWN */
+.menu ul, 
+.menu ul li ul {
+	box-shadow: 0px 0px 8px 0px #000000;
+	list-style: none;
+  margin: 0;
+  padding: 0;    
+	display: none;
+  position: absolute;
+  z-index: 999;
+    width: 305px;
+	background: #447A40;
+  border: solid 1px #4cbd50;
+}
+
+.menu ul{
+   top: 50px;
+   left: 0;
+}
+
+.menu ul li ul{
+    top: 0;
+    left: 150px;
+}
+
+.menu ul li{
+	clear:both;
+	width:100%;
+	font-size:14px;
+}
+
+.menu ul li a {
+	width:100%;
+	padding:12px 12px;
+	display:inline-block;
+	clear:both;
+  position: left;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; 
+	-webkit-box-sizing:border-box;
+  text-transform:uppercase;
+  border-top: solid 1px #4cbd50;
+}
+
+.menu ul li:hover > a{
+	background: #325C26;
+  color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+	.menu{
+		margin: 0;
+	}
+	.menu li{
+		display: block;
+		width: 100%;
+	}
+	.menu > li > a{
+		width: 100%;
+		padding: 16px 70px 16px 18px;
+		text-align: left;
+		border-top: solid 1px #4cbd50;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box; 
+		-webkit-box-sizing:border-box;
+	}
+	.menu ul, 
+	.menu ul li ul{
+		width: 100%;
+		left: 0;
+		padding: 0 20px;
+		position: static;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box; 
+		-webkit-box-sizing:border-box; 
+	}
+
+}
+
+.menu li:hover ul, .menu li:hover ul li ul {
+  display:block;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.menu2{
+	box-shadow: 0px 0px 8px 0px #000000;
+	width: 100%;
+	padding: 0;
+	position: relative;
+	float: left;
+	background: #325C26;
+	list-style: none;
+}
+
+.menu2 li {
+	display: inline;
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	line-height: 20px;
+	position: relative;
+	border-right:1px #4cbd50 solid;
+} 
+
+.menu2 li a {
+	padding: 15px 20px 15px;
+	color: #FFF;
+	text-decoration: none;
+	display: inline-block;
+	-o-transition: color .3s linear, background .3s linear;
+	-webkit-transition: color .3s linear, background .3s linear;
+	-moz-transition: color .3s linear, background .3s linear;
+	transition: color .3s linear, background .3s linear;	
+}
+
+.menu2 li:hover > a{
+	color: #fff;
+	background: #447A40;
+}
+
+.menu2 li.active > a{
+	background:rgb(229,228,226);
+  color:#325C26;
+}
+
+.menu2 > li > a {
+	text-transform: uppercase;
+}
+
+/* DROPDOWN */
+.menu2 ul, 
+.menu2 ul li ul {
+	box-shadow: 0px 0px 8px 0px #000000;
+	list-style: none;
+  margin: 0;
+  padding: 0;    
+	display: none;
+  position: absolute;
+  z-index: 999;
+	width: 305px;
+	background: #447A40;
+  border: solid 1px #4cbd50;
+}
+
+.menu2 ul{
+   top: 50px;
+   left: 0;
+}
+
+.menu2 ul li ul{
+    top: 0;
+    left: 150px;
+}
+
+.menu2 ul li{
+	clear:both;
+	width:100%;
+	font-size:14px;
+}
+
+.menu2 ul li a {
+	width:100%;
+	padding:12px 12px;
+	display:inline-block;
+	clear:both;
+  position: left;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; 
+	-webkit-box-sizing:border-box;
+  text-transform:uppercase;
+  border-top: solid 1px #4cbd50;
+}
+
+.menu2 ul li:hover > a{
+	background: #325C26;
+  color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+	.menu2{
+		margin: 0;
+	}
+	.menu2 li{
+		display: block;
+		width: 100%;
+	}
+	.menu2 > li > a{
+		width: 100%;
+		padding: 16px 70px 16px 18px;
+		text-align: left;
+		border-top: solid 1px #4cbd50;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box; 
+		-webkit-box-sizing:border-box;
+	}
+	.menu2 ul, 
+	.menu2 ul li ul{
+		width: 100%;
+		left: 0;
+		padding: 0 20px;
+		position: static;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box; 
+		-webkit-box-sizing:border-box; 
+	}
+
+}
+
+.menu2 li:hover ul, .menu2 li:hover ul li ul {
+  display:block;
+}
